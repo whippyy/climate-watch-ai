@@ -2,52 +2,49 @@
 
 **AI-Powered Wildfire Risk Prediction and Environmental Monitoring**
 
-Climate Watch AI is an open-source platform that uses real-time environmental data and machine learning to predict wildfire risk and visualize climate-related threats. It empowers communities, first responders, and policy makers with early warning systems and data-driven insights.
+Climate Watch AI uses machine learning and real-time environmental data to predict wildfire risks and visualize climate threats. This project is designed for solo development with a focus on quick MVP delivery within about a month, aiming to empower communities and decision-makers.
 
 ---
 
-## 🚀 Project Goals
+## 🚀 Project Goals (4–5 Week MVP)
 
-- Predict wildfire risk based on environmental and weather data
-- Visualize climate threats using interactive maps and dashboards
-- Provide open access to climate trends and insights through data analysis
-- Build a scalable and extensible tool to support disaster preparedness and mitigation
+- Build a baseline wildfire risk prediction model using historical data  
+- Provide a simple backend API for risk prediction  
+- Develop an interactive React dashboard with maps and charts  
+- Deploy a live app with documented usage and insights  
 
 ---
 
 ## 🧠 Key Features
 
-| Feature                     | Description                                                                 |
-|----------------------------|-----------------------------------------------------------------------------|
-| 🔥 Wildfire Risk Prediction | Machine learning models trained on historical wildfire + weather data      |
-| 📈 Climate Data Analysis     | Exploratory notebooks and visualizations on trends, hotspots, and risk     |
-| 🗺️ Geospatial Dashboard      | React-based map with risk overlays, trends, and statistics                  |
-| 📡 Data Pipelines            | Automated ETL jobs for ingesting NASA, NOAA, and other open datasets        |
-| 📊 Reports & Insights        | Shareable reports and visuals for communities and decision-makers          |
+| Feature                     | Status (MVP Focus)                                |
+|----------------------------|--------------------------------------------------|
+| 🔥 Wildfire Risk Prediction | Baseline model with historical data              |
+| 🗺️ Geospatial Dashboard      | Map view showing risk overlays                    |
+| 📈 Data Visualization        | Simple charts with fire trends                    |
+| 📡 Backend API               | `/predict-risk` endpoint                          |
+| 🚀 Deployment                | Hosted frontend and backend                        |
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Backend
-- Python (FastAPI or Flask)
-- Scikit-learn / XGBoost for ML
-- PostgreSQL + PostGIS (geospatial DB)
-- Docker for deployment
+- Python, FastAPI, scikit-learn or XGBoost  
+- Data processing with pandas and Jupyter notebooks
 
 ### Frontend
-- React + TailwindCSS
-- Mapbox or Leaflet for mapping
-- Recharts or Chart.js for data viz
+- React, Mapbox GL or Leaflet  
+- Chart.js or Recharts for charts
 
-### Data & Analysis
-- Jupyter Notebooks
-- pandas, seaborn, geopandas
-- NASA Earthdata, NOAA, USGS APIs
+### Deployment
+- Render (backend)  
+- Netlify or Vercel (frontend)
 
 ---
 
 ## 📁 Project Structure
+
 
 climate-watch-ai/
 │
