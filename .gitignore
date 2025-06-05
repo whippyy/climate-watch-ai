@@ -192,3 +192,20 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# === NODE / REACT ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+*.env.local
+
+# === DOCKER ===
+*.log
+docker-compose.override.yml
+
+# === OS-SPECIFIC ===
+.DS_Store
+Thumbs.db
