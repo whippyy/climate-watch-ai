@@ -1,96 +1,67 @@
-# 🌍 Climate Watch AI – Project Roadmap
-
-This document outlines the development plan for **Climate Watch AI**, from initial MVP to future feature expansions. The project focuses on combining machine learning, climate science, and geospatial visualization to help detect and predict wildfire risks.
+# 🌍 Climate Watch AI – Project Roadmap (10 hrs/week, ~5 weeks)
 
 ---
 
-## ✅ Phase 1: Foundation & MVP
+## ✅ Week 1: Data Collection & Exploration
 
-**Goal:** Build a functional prototype that ingests data, runs a basic fire risk prediction model, and displays results in a simple dashboard.
-
-### 🔹 Tasks
-- [x] Set up GitHub repo and project structure
-- [ ] Ingest historical wildfire & weather datasets (NASA, NOAA, USGS)
-- [ ] Clean and process datasets into machine learning-friendly format
-- [ ] Exploratory data analysis (wildfire trends, climate variables)
-- [ ] Train first fire risk prediction model (XGBoost or Random Forest)
-- [ ] Develop backend API with `/predict-risk` endpoint
-- [ ] Build simple React frontend with map + chart visualizations
-- [ ] Deploy backend (Docker + AWS or Render)
-- [ ] Deploy frontend (Netlify or Vercel)
+- Ingest historical wildfire and weather datasets (NASA, NOAA, USGS)
+- Clean and preprocess datasets for modeling
+- Perform exploratory data analysis (EDA) using Jupyter notebooks
+- Save cleaned data for modeling
 
 ---
 
-## 🔁 Phase 2: Data Expansion & Visualization
+## ✅ Week 2: Model Development & Backend API
 
-**Goal:** Improve model performance and user experience through better data, geospatial tools, and richer visuals.
-
-### 🔹 Tasks
-- [ ] Integrate real-time weather API (e.g., Open-Meteo or NOAA)
-- [ ] Add vegetation/dryness index (NDVI from MODIS)
-- [ ] Introduce PostgreSQL + PostGIS for spatial querying
-- [ ] Improve dashboard UX with filtering, zoom, and timeline slider
-- [ ] Generate dynamic heatmaps for fire risk
-- [ ] Enhance charts with D3 or Recharts for better trend insight
-- [ ] Begin publishing periodic PDF reports with insights and plots
+- Train a baseline wildfire risk prediction model (XGBoost or Random Forest)
+- Evaluate model performance on test data
+- Develop backend API using FastAPI with a `/predict-risk` endpoint
+- Test API locally with sample inputs
 
 ---
 
-## 🔮 Phase 3: Advanced ML & Real-Time Features
+## ✅ Week 3: Frontend Dashboard MVP
 
-**Goal:** Build a scalable intelligence system that delivers meaningful real-time predictions.
-
-### 🔹 Tasks
-- [ ] Fine-tune deep learning models on satellite image tiles (CNN)
-- [ ] Add anomaly detection on real-time sensor/weather streams
-- [ ] Auto-update risk levels daily using scheduled ETL jobs
-- [ ] Integrate push/SMS alerts using Twilio or Firebase
-- [ ] Add authentication for responders to mark impacted zones
+- Build a simple React frontend with map visualization (Mapbox or Leaflet)
+- Display wildfire risk predictions on the map
+- Add basic charts to visualize fire trends
+- Connect frontend to backend API
 
 ---
 
-## 📊 Phase 4: Data Insights & Public Reporting
+## ✅ Week 4: Deployment & Documentation
 
-**Goal:** Use the platform for civic education and decision-making by producing data-driven insights.
-
-### 🔹 Tasks
-- [ ] Build notebook-based reporting pipeline (Jupyter → PDF)
-- [ ] Visualize climate trends (temperature, rainfall, fire frequency)
-- [ ] Share dashboards with non-profits or policymakers
-- [ ] Create comparison tool: "How has your region changed?"
+- Deploy backend API on Render or AWS
+- Deploy frontend on Netlify or Vercel
+- Write and polish README and project documentation
+- (Optional) Prepare a basic insights report/notebook summarizing findings
 
 ---
 
-## 🤝 Long-Term Ideas (Stretch Goals)
+## 🔮 Stretch Goals (If Time Permits)
 
-- Community reporting feature (citizen fire spotting via app)
-- Use drone data or edge devices for remote detection
-- Expand globally (Amazon, Australia, Mediterranean regions)
-- Integrate with emergency services APIs for real-time response
-- Support other disasters (floods, droughts)
-
----
-
-## 🗓️ Timeline Estimate
-
-| Milestone | Target Date |
-|-----------|-------------|
-| Phase 1 Completion (MVP) | Mid–July 2025 |
-| Phase 2 Visualization Enhancements | August 2025 |
-| Phase 3 Real-Time Features | Fall 2025 |
-| Phase 4 Insights & Public Launch | Winter 2025 |
+- Integrate live weather API for real-time data
+- Add interactivity like timeline slider for risk over time
+- Enable user data upload for custom predictions
+- Implement push notifications or alerts
 
 ---
 
-## 🧑‍💻 Contribution Guidelines
+## 📅 Summary Timeline
 
-- Use descriptive branches (e.g., `feature/model-v1`)
-- Submit issues before large feature changes
-- Document any scripts, datasets, or visualizations in `/notebooks/` or `/reports/`
+| Week | Focus                   | Outcome                          |
+|-------|-------------------------|---------------------------------|
+| 1     | Data ingestion & EDA     | Cleaned data, initial insights  |
+| 2     | Model + Backend          | Risk prediction API ready        |
+| 3     | Frontend MVP             | Interactive dashboard            |
+| 4     | Deployment & Docs        | Live app and polished repo       |
+| 5+    | Stretch goals            | Enhanced features (optional)     |
 
 ---
 
-## 📫 Stay Updated
+## 🧑‍💻 Contribution & Workflow Tips
 
-Follow the project on GitHub or contact [Your Email or GitHub Profile] for questions and ideas.
+- Use Git branches for each feature
+- Commit frequently with descriptive messages
+- Track tasks using GitHub issues or a personal to-do list
 
